@@ -1,0 +1,238 @@
+/*
+https://www.csscolorpalettes.com/palettes/1652#palette
+
+*/
+
+#root{
+  height:100%;
+  width: 100%;
+}
+
+#app{
+  height:100%;
+  width: 100%;
+}
+
+:root {
+  --backgroundColor: #f2f2f2;
+  --textColor: #121416d8;
+  --linkColor: #543fd7;
+  /* MODAL */
+  --header-color:#374148;
+  --header-text:#f2f2f2;
+  --modal-content:#f2f2f2;
+  --modal-text:#374148;
+  /* BUTTON */
+  --primary-color:#52616b;
+  --primary-hover:#6f8390;
+  --secondary-color:#c9d6df; 
+  --secondary-hover:#9fb6c6;
+  --tertiary-color:#f0f5f9; 
+  --tertiary-hover:#b6cee2; 
+  --positive-color:#82b74b;
+  --positive-hover:#67923a;
+  --negtive-color:#ff0000;
+  --negtive-hover:#DC143C;
+/* event color change  */
+/* message color */
+  --infoColor:#87bdd8;
+  --successColor:#96ceb4;
+  --errorColor:#ffcc5c;
+  --warnColor:#ff6f69;
+/* SELECT */
+  --select-color:DodgerBlue;
+
+  --switch-color:DodgerBlue;
+  --switch-bg:#ccc;
+  --switch-default:white;
+
+/* test  */
+
+}
+
+html[data-theme='light'] {
+  --backgroundColor: #f2f2f2;
+  --textColor: #121416d8;
+  --linkColor: #543fd7;
+
+  --header-color:#374148;
+  --header-text:#f2f2f2;
+  --modal-content:#f2f2f2;
+  --modal-text:#374148;
+
+  --primary-color:#52616b;
+  --primary-hover:#6f8390;
+  --secondary-color:#c9d6df; 
+  --secondary-hover:#9fb6c6;
+  --tertiary-color:#f0f5f9; 
+  --tertiary-hover:#b6cee2; 
+  --positive-color:#82b74b;
+  --positive-hover:#67923a;
+  --negtive-color:#ff0000;
+  --negtive-hover:#DC143C;
+  --infoColor:#87bdd8;
+  --successColor:#96ceb4;
+  --errorColor:#ffcc5c;
+  --warnColor:#ff6f69;
+
+  --select-color:DodgerBlue;
+  --switch-color:DodgerBlue;
+  --switch-bg:#ccc;
+  --switch-default:white;
+}
+
+html[data-theme='dark'] {
+  --backgroundColor: #212a2e;
+  --textColor: #F7F8F8;
+  --linkColor: #828fff;
+
+  --header-color:#52616b;
+  --header-text:#f2f2f2;
+  --modal-content:#374148;
+  --modal-text: #f2f2f2;
+
+
+  --primary-color:#4d4d4d;
+  --primary-hover:#666666;
+  --secondary-color:#808080; 
+  --secondary-hover:#999999;
+  --tertiary-color:#b3b3b3; 
+  --tertiary-hover:#cccccc; 
+  --positive-color:#006600;
+  --positive-hover:#009900;
+
+  --negtive-color:#660000;
+  --negtive-hover:#990000;
+
+  --infoColor:#87bdd8;
+  --successColor:#96ceb4;
+  --errorColor:#ffcc5c;
+  --warnColor:#ff6f69;
+
+  --select-color:#000066;
+
+  --switch-color:#000066;
+  --switch-bg:#ccc;
+  --switch-default:gray;
+}
+
+body {
+  margin: 0%;
+  background: var(--backgroundColor);
+  color: var(--textColor);
+}
+
+a {
+  color: var(--linkColor);
+}
+
+label{
+  color: var(--textColor);
+}
+
+p{
+  color: var(--textColor);
+}
+
+a:hover {
+  text-decoration: underline;
+  filter: brightness(80%);
+}
+
+/* UI MESSAGE */
+.info{
+  background-color: var(--infoColor);
+}
+
+.success{
+  background-color: var(--successColor);
+}
+
+.error{
+  background-color: var(--errorColor);
+}
+
+.warn{
+  background-color: var(--warnColor);
+}
+/* BUTTON */
+.btn_pri
+,.btn_sec
+,.btn_ter
+,.btn_pos
+,.btn_neg {
+  display:inline-block;
+	cursor:pointer;
+  text-decoration:none;
+  border: 0;
+  color: var(--textColor);
+}
+
+.btn_pri:active,
+.btn_sec:active,
+.btn_ter:active,
+.btn_pos:active,
+.btn_neg:active {
+	position:relative;
+	top:1px;
+}
+
+.btn_pri{
+  background-color: var(--primary-color);
+}
+.btn_pri:hover {
+	background-color: var(--primary-hover);
+}
+.btn_sec{
+  background-color: var(--secondary-color);
+}
+.btn_sec:hover {
+	background-color:var(--secondary-hover);
+}
+
+.btn_ter{
+  background-color: var(--tertiary-color);
+}
+.btn_ter:hover {
+	background-color: var(--tertiary-hover);
+}
+
+.btn_pos{
+  background-color: var(--positive-color);
+}
+.btn_pos:hover {
+	background-color:var(--positive-hover);
+}
+
+.btn_neg{
+  background-color: var(--negtive-color);
+}
+.btn_neg:hover {
+	background-color:var(--negtive-hover);
+}
+
+/*  SELECT  */
+.Select {
+  background-color: var(--select-color);
+  /*text-decoration:none;*/
+  border: 0;
+  color: var(--textColor);
+}
+
+/*  CHECKBOX  */
+.CheckBox{
+  position: relative;
+  top:2px;
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.4); /* IE */
+  -moz-transform: scale(1.4); /* FF */
+  -webkit-transform: scale(1.4); /* Safari and Chrome */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4);
+  /*padding: 10px;*/
+}
+
+/*  TEST  */
+.blank{
+  background: gray;
+}
